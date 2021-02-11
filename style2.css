@@ -1,0 +1,316 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Rajdhani SemiBold;
+    background: #ffffff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f83600, #fe8c00);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+section img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+header {
+    font-family: Rajdhani SemiBold;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    margin-top: 10px;
+}
+
+header nav {
+    color: white;
+    text-decoration: none;
+    animation: moverizquieda 1s ease-in;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    z-index: 1;
+}
+
+.menu_bar {
+    display: none;
+    z-index: 1;
+}
+
+.menu_bar .bt-menu:hover {
+    color: rgb(255, 215, 169);
+    font-size: 33px;
+}
+
+.menu_bar .bt-menu #span4:hover {
+    font-size: 43px;
+}
+
+header nav ul {
+    overflow: hidden;
+    list-style: none;
+    z-index: 1;
+}
+
+header nav ul li {
+    float: left;
+    z-index: 1;
+}
+
+header nav ul li a {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.btn-neon span {
+    position: absolute;
+    display: block;
+}
+
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 20%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f3d00a);
+}
+
+.btn-neon:hover #span1 {
+    left: 5%;
+    transition: 1s;
+}
+
+#span3 {
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 2px;
+    background: linear-gradient(transparent, #f3d00a);
+    display: block;
+}
+
+#span2 {
+    top: 0;
+    left: -100%;
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #f3d00a);
+}
+
+.btn-neon:hover #span2 {
+    left: 100%;
+    transition: 0.75s;
+}
+
+header nav ul li #span0 {
+    text-align: center;
+    z-index: 1;
+}
+
+header nav ul li a:hover {
+    background: linear-gradient(90deg, transparent, #f3d00a);
+    ;
+    font-size: 18px;
+    z-index: 1;
+    color: rgba(255, 239, 228, 0.719);
+    box-shadow: 0 0 10px #f3d00a, 0 0 40px#f3d00a.0 0 80px #f3d00a;
+}
+
+section img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.box {
+    margin-top: 15px;
+    width: 340px;
+    height: 580px;
+    background-color: rgba(245, 242, 234, 0.247);
+    border-radius: 10px;
+    box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.model {
+    height: 300px;
+    max-height: 100%;
+}
+
+.detalis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.detalis {
+    color: white;
+    text-align: center;
+}
+
+.iformacion {
+    color: #ffa4358e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.box:hover {
+    background: #fe8c00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f83600, #fe8c00);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transform-style: preserve-3d;
+    transform: scale(1.02);
+    transition: all ease 0.3s;
+}
+
+.box:hover .iformacion {
+    color: #fdf8f4c0;
+    transition: all ease 0.5s;
+}
+
+
+/*--responsive for mobile phone--*/
+
+@media(min-width: 280px) and (max-width: 1333px) {
+    header {
+        position: fixed;
+        z-index: 100;
+    }
+    header nav {
+        height: 100%;
+        width: 80%;
+        left: -100%;
+        margin: 0px;
+        position: fixed;
+    }
+    header nav ul li {
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+    header nav ul li a {
+        color: rgb(48, 2, 2);
+    }
+    a {
+        color: snow;
+    }
+    .menu_bar {
+        display: block;
+        width: 100%;
+        background: rgba(139, 69, 19, 0);
+    }
+    .menu_bar .bt-menu {
+        display: block;
+        padding: 20px;
+        background: rgba(250, 250, 250, 0);
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .menu_bar #span4 {
+        float: right;
+        font-size: 40px;
+    }
+    header nav ul li a {
+        color: rgb(255, 255, 255);
+        background: #e4e3e03d;
+    }
+    header nav ul li a:hover {
+        color: rgba(255, 255, 255, 0.815);
+        background: #f5e58b33;
+    }
+    .vid {
+        margin-top: 78px;
+    }
+}
+
+@keyframes moverizquieda {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1, transform translate(0);
+    }
+}
+
+@keyframes arriba {
+    0% {
+        opacity: 0;
+        transform: translatey(-100px);
+    }
+    100% {
+        opacity: 1, transform translate(0);
+    }
+}
+
+.nubes {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    animation: moverizquieda 50s ease-in;
+}
+
+section img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+p {
+    font-family: Rajdhani;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: Rajdhani;
+    font-weight: bold;
+}
+
+.uno {
+    font-size: 20px;
+    font-family: Rajdhani;
+    font-weight: bold;
+}
